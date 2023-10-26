@@ -1,0 +1,22 @@
+.login-container {
+    margin-top: 100px;
+    width: 400px;
+    padding: 16px;
+    border: 1px solid #5bef6f;
+    border-radius: 5px;
+    margin: auto; /* This centers the container horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This centers the items inside the container horizontally */
+    justify-content: center; /* This centers the items inside the container vertically */
+    height: 60vh; /* Adjust this value based on your requirements */
+  }
+
+  .login-container-btn{
+     color: #5bef6f;
+     border-color: black;
+     align-items: center; /* This centers the items inside the container horizontally */
+     justify-content: center; 
+     
+  }
+  
