@@ -33,6 +33,8 @@ const LogIn = () => {
         if (response.status === 200) {
           // Show success message on the form
           setSuccessMessage('Login successful');
+          navigate("/viewallcourses");
+
         }
         return response.json();
       })
@@ -49,6 +51,9 @@ const LogIn = () => {
   };
 
   return (
+    <div>
+      <h1 id='header'> Welcome to Online Learning App </h1>
+
     <div className="login-container">
       <h2>Login to Your Account</h2>
 
@@ -78,6 +83,7 @@ const LogIn = () => {
         {failedMessage && <p style={{ color: 'red' }}>{failedMessage}</p>}
 
       </form>
+    </div>
     </div>
   );
 };

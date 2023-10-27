@@ -55,6 +55,9 @@ const SignUp = () => {
 
 
   return (
+    <div>
+      <h1 id='header'> Welcome to Online Learning App </h1>
+
     <div className="login-container">
       <h2>Create Login for Your Account</h2>
 
@@ -88,6 +91,7 @@ const SignUp = () => {
         {successMessage && <p style={{ color: 'green' }}>{successMessage}</p>}
         {failedMessage && <p style={{ color: 'red' }}>{failedMessage}</p>}
       </form>
+    </div>
     </div>
   );
 };

@@ -1,10 +1,11 @@
 .login-container {
-    margin-top: 100px;
+    margin-top: 75px;
+    margin-left: 500px;
     width: 400px;
-    padding: 16px;
+    padding: 10px;
     border: 1px solid #5bef6f;
     border-radius: 5px;
-    margin: auto; /* This centers the container horizontally */
+    /* This centers the container horizontally */
     display: flex;
     flex-direction: column;
     align-items: center; /* This centers the items inside the container horizontally */
@@ -18,5 +19,24 @@
      align-items: center; /* This centers the items inside the container horizontally */
      justify-content: center; 
      
+  }
+
+  .video-container {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   margin: auto; /* This centers the container horizontally */
+ }
+ 
+ .video-item {
+   margin: 40px; /* Adjust the value as needed to add space between the videos */
+ }
+ 
+
+  #header{
+   color: #f94d53;
+   margin-left: 500px;
+
   }
   
