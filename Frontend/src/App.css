@@ -1,6 +1,6 @@
 .login-container {
     margin-top: 75px;
-    margin-left: 500px;
+    margin-left: 550px;
     width: 400px;
     padding: 10px;
     border: 1px solid #5bef6f;
@@ -16,6 +16,8 @@
   .login-container-btn{
      color: #5bef6f;
      border-color: black;
+     
+     margin: auto;
      align-items: center; /* This centers the items inside the container horizontally */
      justify-content: center; 
      

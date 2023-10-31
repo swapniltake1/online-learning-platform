@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import '../App.css';
+import Home from './Home';
+import { Button } from 'reactstrap';
 
 const LogIn = () => {
   const [password, setPassword] = useState('');
@@ -33,7 +35,7 @@ const LogIn = () => {
         if (response.status === 200) {
           // Show success message on the form
           setSuccessMessage('Login successful');
-          navigate("/viewallcourses");
+          navigate("/courses");
 
         }
         return response.json();
@@ -52,7 +54,7 @@ const LogIn = () => {
 
   return (
     <div>
-      <h1 id='header'> Welcome to Online Learning App </h1>
+
 
     <div className="login-container">
       <h2>Login to Your Account</h2>
@@ -72,8 +74,8 @@ const LogIn = () => {
         <br />
         <br />
         <div className="login-container-btn">
-          <button type="submit">Login</button>
-          <button type="button" onClick={() => navigate("/signup")}>Go to Signup</button>
+          <Button type="submit" color='primary'>Login</Button>
+          <Button type="button" color='warning ml-3' onClick={() => navigate("/signup")}>Go to Signup</Button>
         </div>
 
         <br />
